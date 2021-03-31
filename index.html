@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+		}
+		.wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: #fbfbfb;
+		}
+		.wrapper > div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 20rem;
+			line-height: 10rem;
+			color: #ccc;
+			text-shadow: 2px -5px 18px #00000014;
+		}
+		h1 > span {
+			font-size: 8rem;
+			margin-left: -3rem;
+			font-weight: 500;
+		}
+		form {
+			display: flex;
+			align-items: center;
+		}
+		form > input{
+			width: 7rem;
+			padding: 0.2rem;
+			border-radius: 1rem;
+			border: 1px solid #ccc;
+			font-size: 2rem;
+			text-align: center;
+		}
+		form > b {
+			margin: -0.7rem 0.5rem 0;
+			font-size: 2rem;
+		}
+		form > button {
+			padding: 0.2rem 0.5rem;
+			background-color: #ccc;
+			border: 1px solid;
+			border-radius: 5px;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+		.wrapper > div > div {
+			text-align: center;
+			height: 8rem;
+		}
+		h5 {
+			margin-bottom: 0;
+		}
+		h3 {
+			margin: 0;
+			font-size: 4rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			<h1>7<span>s</span></h1>
+			<form class="flex" id="form">
+				<input id="input" type="number" value="1000" />
+				<b>👉</b>
+				<button>Calculate !</button>
+			</form>
+			<div>
+				<h5 id="resultIs" hidden>Result is:</h5>
+				<h3 id="result"></h3>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
